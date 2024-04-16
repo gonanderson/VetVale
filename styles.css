@@ -70,11 +70,11 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-.contact {
+/* .contact {
     background-color: #f4f4f4;
     padding: 100px 0;
     text-align: center;
-}
+} */
 
 .contact-content {
     max-width: 800px;
@@ -96,8 +96,8 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #b6b6b6;
+    color: #6ba749;
     padding: 50px 0;
 }
 
@@ -128,7 +128,7 @@ footer {
 }
 
 .footer-section ul li a {
-    color: #fff;
+    color:#6ba749;
     text-decoration: none;
 }
 
@@ -138,5 +138,17 @@ footer {
 
 .footer-bottom {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+/* aqui é o form */
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+}
+
+.container-xl {
+    
 }
