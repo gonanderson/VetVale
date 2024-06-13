@@ -9,67 +9,71 @@
 <body>
     <header>
         <div class="logo">
-            <h1><a href="index.html" title="Home page"><img src="logo.jpg" alt="ACME Inc."></a></h1>
+            <h1><a href="index.html" title="Home page"><img src="logo.png" alt="ACME Inc."></a></h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">VetVale</a></li>
-                <li><a href="#">Laboratórios</a></li>
-                <li><a href="#">Representantes</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="vetvale.html">VetVale</a></li>
+                <li><a href="laboratorios.html">Laboratórios</a></li>
+                <li><a href="representantes.html">Representantes</a></li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
-    
     <section class="hero">
         <div class="hero-content">
             <h1>Bem-vindo à VetVale Distribuidora</h1>
             <p>Oferecemos uma ampla gama de produtos veterinários de alta qualidade para atender às necessidades dos seus animais de estimação.</p>
-            <!-- <a href="#" class="btn">Ver Produtos</a> -->
         </div>
-        <section class="labs">
-            <div class="labs-content">
-                <h2>Boehringer</h2>
-                <p>Veja nossos principais parceiros:</p>
-                <div class="carousel">
-                    <div class="slide">
-                        <img src="img1.png" alt="Imagem 1">
-                    </div>
-                    <div class="slide">
-                        <img src="img2.png" alt="Imagem 2">
-                    </div>
-                    <div class="slide">
-                        <img src="img3.png" alt="Imagem 3">
-                    </div>
-                    <div class="slide">
-                        <img src="img4.png" alt="Imagem 4">
-                    </div>
-                    <div class="slide">
-                        <img src="img5.png" alt="Imagem 5">
-                    </div>
+        <div class="image-grid">
+            <div class="grid-item">
+                <img src="img1.png" alt="Imagem 1">
+                <div class="grid-item-content">
+                    <h3>Produto 1</h3>
                 </div>
-                <!-- <button class="prev">Anterior</button>
-                <button class="next">Próxima</button> -->
-                <script src="script.js"></script>
-                <a href="#" class="btn">Parceiros</a>
             </div>
-        </section>
+            <div class="grid-item">
+                <img src="img2.png" alt="Imagem 2">
+                <div class="grid-item-content">
+                    <h3>Produto 2</h3>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img3.png" alt="Imagem 3">
+                <div class="grid-item-content">
+                    <h3>Produto 3</h3>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img4.png" alt="Imagem 4">
+                <div class="grid-item-content">
+                    <h3>Produto 4</h3>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="img5.png" alt="Imagem 5">
+                <div class="grid-item-content">
+                    <h3>Produto 5</h3>
+                </div>
+            </div>
+        </div>
+        
     </section>
 
     <div class="content-site">
         <div class="container-xl">
-          <h3>Pesquise por produtos</h3>
-          <p>Encontre o produto que precisa de uma forma mais rápida</p>
+            <h3>Pesquise por produtos</h3>
+            <p>Encontre o produto que precisa de uma forma mais rápida</p>
             <div class="form">     
                 <input type="text" name="s" placeholder="Digite algo e/ou escolha uma categoria">
                 <select name="categoria" id="cat-select" onchange="javascript:location.href=this.value">
                     <option value="">Todas as categorias</option>
                     <option value="">Anti-Infecciosos</option>
-                    <option value="">Aparelho Cardiovascular......</option>
+                    <option value="">Aparelho Cardiovascular</option>
                     <option value="">Aparelho Digestivo</option>
-                    <option value="">Aparelho Genitourinário......</option>
-                    <option value="">Aparelho Respiratório......</option>
-                    <option value="">Aparelho Músculo Esquelético......</option>
+                    <option value="">Aparelho Genitourinário</option>
+                    <option value="">Aparelho Respiratório</option>
+                    <option value="">Aparelho Músculo Esquelético</option>
                     <option value="">Dermatológicos</option>
                     <option value="">Vitaminas</option>
                     <option value="">Diversos</option>
@@ -77,7 +81,7 @@
                     <option value="">Genéricos</option>
                     <option value="">Dor</option>
                     <option value="">Saúde Feminina</option>
-                    <option value="">Sistema Nervoso Central......</option>
+                    <option value="">Sistema Nervoso Central</option>
                     <option value="">Saúde Ocular</option>
                     <option value="">Cuidados com a Pele</option>
                     <option value="">Pediatria</option>
@@ -93,49 +97,54 @@
         <div class="contact-content">
             <h2>Entre em Contato</h2>
             <p>Estamos aqui para ajudar. Entre em contato conosco para obter mais informações sobre nossos produtos.</p>
-            <a href="#" class="btn">Contato</a>
+            <a href="contato.html" class="btn">Contato</a>
         </div>
     </section>
 
     <footer>
-        <div class="footer-content">
+        <div class="footer-top">
             <div class="footer-section about">
-                <h2>Nosso endereço</h2>
-                <p>Cond. Empresarial Eldorado
-                    Rua Arnaldo Domingos Mota, nº60.
-                    Cep: 12238-572
-                    São José dos Campos - SP</p>
+                <h2>Nosso Endereço</h2>
+                <p>Cond. Empresarial Eldorado<br>
+                   Rua Arnaldo Domingos Mota, nº60.<br>
+                   Cep: 12238-572<br>
+                   São José dos Campos - SP</p>
             </div>
             <div class="footer-section links about">
-                <h2>Sobre nós</h2>
+                <h2>Sobre Nós</h2>
                 <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Nossa historia</a></li>
-                    <li><a href="#">Representantes</a></li>
+                    <li><a href="vetvale.html">Quem Somos</a></li>
+                    <li><a href="laboratorios.html">Nossa História</a></li>
+                    <li><a href="representantes.html">Representantes</a></li>
                 </ul>
             </div>
             <div class="footer-section links products">
                 <h2>Produtos</h2>
                 <ul>
-                    <li><a href="#">Boehringer Ingelheim</a></li>
-                    <li><a href="#">Mundo Animal</a></li>
-                    <li><a href="#">Vetnil</a></li>
-                    <li><a href="#">Dechra</a></li>
-                    <li><a href="#">Vansil</a></li>
+                    <li><a href="https://www.boehringer-ingelheim.com/br" target="_blank">Boehringer Ingelheim</a></li>
+                    <li><a href="http://mundoanimal.vet.br/site/index.php" target="_blank">Mundo Animal</a></li>
+                    <li><a href="https://vetnil.com.br/" target="_blank">Vetnil</a></li>
+                    <li><a href="https://www.dechra.com.br/?geo=BR" target="_blank">Dechra</a></li>
+                    <li><a href="http://vansilsaudeanimal.com/" target="_blank">Vansil</a></li>
                 </ul>
             </div>
-            <div class="footer-section links contact">
-                <h2>Sobre nós</h2>
+            <div class="footer-section contact">
+                <h2>Contato</h2>
                 <ul>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Nossa historia</a></li>
-                    <li><a href="#">Representantes</a></li>
+                    <li>Email: <a href="mailto:contato@vetvale.com">contato@vetvale.com</a></li>
+                    <li>Telefone: <a href="https://api.whatsapp.com/send?phone=5512981910915">+55 (12) 3934-1336</a></li>
                 </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/vetvalesaude/" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/vetvaledistribuidora/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/company/vet-vale-sa%C3%BAde-animal/mycompany/" target="_blank"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
             &copy; 2024 VetVale. Todos os direitos reservados.
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
