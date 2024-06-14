@@ -6,7 +6,7 @@ body {
 
 header {
     background-color: white;
-    padding: 20px;
+    padding: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Defina a altura desejada para o logo */
+    height: 30px; /* Defina a altura desejada para o logo */
 }
 
 nav ul {
@@ -32,7 +32,7 @@ nav ul li {
 nav ul li a {
     color: #6ba749;
     text-decoration: none;
-    font-size: 22px;
+    font-size: 19px;
     transition: color 0.3s; /* Add transition for smooth color change */
 }
 
@@ -198,6 +198,11 @@ footer {
     z-index: 1;
     opacity: 0;
     transition: opacity 0.3s;
+    text-shadow: 
+        1px 1px 1px rgba(0, 0, 0, 0.5),  /* Sombra leve à direita e embaixo */
+        -1px -1px 1px rgba(0, 0, 0, 0.5),  /* Sombra leve à esquerda e em cima */
+        -1px 1px 1px rgba(0, 0, 0, 0.5),  /* Sombra leve à esquerda e embaixo */
+        1px -1px 1px rgba(0, 0, 0, 0.5); /* Sombra leve à direita e em cima */
 }
 
 .grid-item:hover .grid-item-content {
@@ -287,4 +292,131 @@ footer {
 
 .magazine-section p em {
     font-style: bold;
+}
+
+/* Seção de Contato */
+.to-contact {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.to-contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', serif;
+}
+
+.to-contact p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.to-contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.to-contact .form-group {
+    margin-bottom: 20px;
+}
+
+.to-contact .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.to-contact .form-group input,
+.to-contact .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.to-contact .form-group input:focus,
+.to-contact .form-group textarea:focus {
+    border-color: #6ba749;
+    outline: none;
+}
+
+.to-contact button {
+    background: #6ba749;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.to-contact button:hover {
+    background: #567a3e;
+}
+
+
+/* video da front page */
+
+#frontpagevid {
+    position: relative;
+    overflow: hidden;
+    /* margin: 0 1%;  */
+    /* Margens de 1% em cada lado */
+    height: 90vh; /* Altura de 90% da viewport */
+    box-sizing: border-box; /* Inclui padding e border no cálculo total da largura */
+    box-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.7), 
+        -1px -1px 2px rgba(0, 0, 0, 0.7);;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Certifica-se que o vídeo fica atrás do texto */
+}
+
+.video-background .content {
+    position: relative;
+    z-index: 1; /* Certifica-se que o conteúdo fica acima do vídeo */
+}
+
+.video-background h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.7), 
+        -1px -1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.video-background p {
+    font-size: 1.5rem;
+    text-shadow: 
+        1px 1px 2px rgba(0, 0, 0, 0.7), 
+        -1px -1px 2px rgba(0, 0, 0, 0.7);
+}
+
+#frontpagevid:hover #bg-video {
+    filter: brightness(0.7);
 }
