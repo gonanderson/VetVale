@@ -98,7 +98,7 @@ nav ul li a:hover {
 footer {
     background-color: #f1f1f1;
     color: #333;
-    padding: 20px;
+    padding: 10px;
 }
 
 .footer-top {
@@ -109,7 +109,7 @@ footer {
 
 .footer-section {
     flex: 1;
-    margin: 20px;
+    margin: 1   0px;
 }
 
 .footer-section h2 {
@@ -411,7 +411,7 @@ footer {
 }
 
 .video-background p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-shadow: 
         1px 1px 2px rgba(0, 0, 0, 0.7), 
         -1px -1px 2px rgba(0, 0, 0, 0.7);
@@ -419,4 +419,123 @@ footer {
 
 #frontpagevid:hover #bg-video {
     filter: brightness(0.7);
+}
+
+/* Estilos para a seção de pesquisa */
+.content-site {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 1200px; /* Largura máxima da seção */
+}
+
+.container-xl {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-xl h3     {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container-xl p {
+    font-size: 16px;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input[type="text"],
+.form select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #6ba749;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #5a9440;
+}
+
+
+.partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.partners h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.partner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+.partner img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.partner-info {
+    flex: 1;
+}
+
+.partner-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.partner-info p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .partner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .partner img {
+        margin-bottom: 10px;
+    }
 }

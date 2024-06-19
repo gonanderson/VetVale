@@ -24,7 +24,7 @@
     <section id="to-contact" class="to-contact">
         <h2>Entre em Contato Conosco</h2>
         <p>Preencha o formulário abaixo para enviar uma mensagem para nossa equipe.</p>
-        <form action="send_message.php" method="post">
+        <form id="contact-form">
             <div class="form-group">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
@@ -43,7 +43,35 @@
             </div>
             <button type="submit">Enviar Mensagem</button>
         </form>
+        <div id="status"></div> <!-- Para exibir mensagens de sucesso ou erro -->
     </section>
+    
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+    
+            // Coleta os dados do formulário
+            var formData = new FormData(this);
+    
+            // Cria uma requisição AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'send_message.php', true);
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // Se o envio for bem-sucedido, exibe mensagem de sucesso
+                    document.getElementById('status').innerHTML = '<p>Mensagem enviada com sucesso!</p>';
+                    document.getElementById('contact-form').reset(); // Limpa o formulário
+                } else {
+                    // Se houver um erro, exibe mensagem de erro
+                    document.getElementById('status').innerHTML = '<p>Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente mais tarde.</p>';
+                }
+            };
+    
+            // Envia os dados do formulário
+            xhr.send(formData);
+        });
+    </script>
+        
     <footer>
         <div class="footer-top">
             <div class="footer-section about">
